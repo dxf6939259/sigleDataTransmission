@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UnidirectDataTransfer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Dylan\AppData\Local\Temp\RSP1129.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/UnidirectDataTransfer.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\单向数据传输\20140608\UnidirectDataTransfer\DlgDataReceive.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dylan\AppData\Local\Temp\RSP1129.tmp" 
+Creating temporary file "C:\Users\Dylan\AppData\Local\Temp\RSP112A.tmp" with contents
+[
+..\Release\LogIn.lib ..\Release\LogMgr.lib ..\Release\TransControl.lib Shlwapi.lib /nologo /subsystem:windows /incremental:no /pdb:"..\Release/UnidirectDataTransfer.pdb" /debug /machine:I386 /out:"..\Release/UnidirectDataTransfer.exe" 
+".\Release\BufZoneManager.obj"
+".\Release\DlgDataReceive.obj"
+".\Release\DlgDataSend.obj"
+".\Release\Markup.obj"
+".\Release\OperXml.obj"
+".\Release\StdAfx.obj"
+".\Release\UnidirectDataTransfer.obj"
+".\Release\UnidirectDataTransfer.res"
+]
+Creating command line "link.exe @C:\Users\Dylan\AppData\Local\Temp\RSP112A.tmp"
+<h3>Output Window</h3>
+Compiling...
+DlgDataReceive.cpp
+E:\单向数据传输\20140608\UnidirectDataTransfer\DlgDataReceive.cpp(250) : warning C4101: 'DataBuf' : unreferenced local variable
+E:\单向数据传输\20140608\UnidirectDataTransfer\DlgDataReceive.cpp(477) : warning C4101: 'DataBuf' : unreferenced local variable
+E:\单向数据传输\20140608\UnidirectDataTransfer\DlgDataReceive.cpp(558) : warning C4101: 'installPath' : unreferenced local variable
+E:\单向数据传输\20140608\UnidirectDataTransfer\DlgDataReceive.cpp(863) : warning C4551: function call missing argument list
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+Creating temporary file "C:\Users\Dylan\AppData\Local\Temp\RSP13BA.tmp" with contents
+[
+/nologo /o"..\Release/UnidirectDataTransfer.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\BufZoneManager.sbr"
+".\Release\DlgDataReceive.sbr"
+".\Release\DlgDataSend.sbr"
+".\Release\Markup.sbr"
+".\Release\OperXml.sbr"
+".\Release\UnidirectDataTransfer.sbr"]
+Creating command line "bscmake.exe @C:\Users\Dylan\AppData\Local\Temp\RSP13BA.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+UnidirectDataTransfer.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

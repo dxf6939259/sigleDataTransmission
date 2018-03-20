@@ -1,0 +1,398 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\UnidirectDataTransfer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\UnidirectDataTransfer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 UnidirectDataTransfer"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "UnidirectDataTransfer 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DLG_DATA_SEND DIALOG DISCARDABLE  0, 0, 568, 371
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "单向数据发送服务"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "文件传输",IDC_STATIC,4,6,557,139
+    GROUPBOX        "数据传输",IDC_STATIC,4,152,557,75
+    GROUPBOX        "流媒体传输",IDC_STATIC,4,238,557,73
+    GROUPBOX        "终端设备信息",IDC_STATIC,4,320,415,35
+    LTEXT           "本地端口:",IDC_STATIC,7,17,38,8
+    EDITTEXT        IDC_EDT_PORT_LOCAL_FILE,44,14,36,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "目的地址:",IDC_STATIC,87,16,37,8
+    CONTROL         "IPAddress1",IDC_IP_AIM_FILE,"SysIPAddress32",WS_TABSTOP,
+                    125,14,80,15
+    LTEXT           "目的端口:",IDC_STATIC,208,16,39,8
+    EDITTEXT        IDC_EDT_PORT_RECEIVE_FILE,247,13,39,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "监控路径:",IDC_STATIC,7,33,38,8
+    EDITTEXT        IDC_EDT_PATH_MONITOR,44,31,204,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "........",IDC_BUT_PATH_MONITOR,256,32,30,13
+    LTEXT           "监控类型:",IDC_STATIC,7,50,37,8
+    EDITTEXT        IDC_EDT_TYPE_MONITOR,44,48,242,14,ES_AUTOHSCROLL
+    CONTROL         "删除已发送文件",IDC_RDO_DELETE_SENDED_FILE,"Button",
+                    BS_AUTORADIOBUTTON,9,68,69,10
+    CONTROL         "转存已发送文件",IDC_RAO_SAVE_SENDED_FILE,"Button",
+                    BS_AUTORADIOBUTTON,88,69,69,10
+    CONTROL         "安全检查待发送文件",IDC_CHK_CHECK_FILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,70,86,10
+    LTEXT           "转存路径:",IDC_STATIC,7,83,37,8
+    EDITTEXT        IDC_EDT_FILE_SAVE_PATH,44,82,204,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "........",IDC_BUT_FILE_PATH,256,83,30,13
+    LTEXT           "当前状态:",IDC_STATIC,7,100,38,8
+    EDITTEXT        IDC_EDT_STATUS_FILE,44,99,242,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "启动",IDC_BUT_START_FILE,10,120,42,20
+    PUSHBUTTON      "停止",IDC_BUT_STOP_FILE,86,120,42,21
+    PUSHBUTTON      "重启",IDC_BUT_RESTART_FILE,163,119,42,21
+    PUSHBUTTON      "保存参数",IDC_BUT_SAVE_PARAM_END,372,330,42,20
+    CONTROL         "List1",IDC_LST_LOG_FILE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,294,15,264,126
+    LTEXT           "本地端口:",IDC_STATIC,7,165,37,8
+    EDITTEXT        IDC_EDT_PORT_LOCAL_DATA,44,162,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "目的地址:",IDC_STATIC,90,164,36,8
+    CONTROL         "IPAddress1",IDC_IP_AIM_DATA,"SysIPAddress32",WS_TABSTOP,
+                    128,162,76,15
+    LTEXT           "目的端口:",IDC_STATIC,208,164,38,8
+    EDITTEXT        IDC_EDT_PORT_RECEIVE_DATA,246,161,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "当前状态:",IDC_STATIC,7,180,38,8
+    EDITTEXT        IDC_EDT_STATUS_DATA,44,179,242,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "启动",IDC_BUT_START_DATA,9,200,42,20
+    PUSHBUTTON      "停止",IDC_BUT_STOP_DATA,86,200,42,21
+    PUSHBUTTON      "重启",IDC_BUT_RESTART_DATA,163,199,42,22
+    PUSHBUTTON      "保存参数",IDC_BUT_SAVE_PARAM_DATA,244,199,42,22
+    CONTROL         "List1",IDC_LST_LOG_DATA,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,293,158,264,66
+    LTEXT           "本地端口:",IDC_STATIC,8,251,36,8
+    EDITTEXT        IDC_EDT_PORT_LOCAL_MEDIA,45,248,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "目的地址:",IDC_STATIC,90,250,38,8
+    CONTROL         "IPAddress1",IDC_IP_AIM_MEDIA,"SysIPAddress32",
+                    WS_TABSTOP,128,248,78,15
+    LTEXT           "目的端口:",IDC_STATIC,209,250,39,8
+    EDITTEXT        IDC_EDT_PORT_RECEIVE_MEDIA,247,247,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "当前状态:",IDC_STATIC,8,266,38,8
+    EDITTEXT        IDC_EDT_STATUS_MEDIA,45,265,242,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "启动",IDC_BUT_START_MEDIA,10,286,42,20
+    PUSHBUTTON      "停止",IDC_BUT_STOP_MEDIA,86,286,42,21
+    PUSHBUTTON      "重启",IDC_BUT_RESTART_MEDIA,163,285,42,21
+    PUSHBUTTON      "保存参数",IDC_BUT_SAVE_PARAM_MEDIA,245,286,42,21
+    CONTROL         "List1",IDC_LST_LOG_MEDIA,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,293,244,263,66
+    LTEXT           "本地端口:",IDC_STATIC,6,335,37,8
+    EDITTEXT        IDC_EDT_PORT_LOCAL_END,43,332,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "目的地址:",IDC_STATIC,90,334,37,8
+    CONTROL         "IPAddress1",IDC_IP_LOCAL_END,"SysIPAddress32",
+                    WS_TABSTOP,127,332,78,15
+    LTEXT           "目的端口:",IDC_STATIC,209,334,39,8
+    EDITTEXT        IDC_EDT_PORT_RECEIVE_END,248,331,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "启动双向校验回路",IDC_CHK_CIRCUIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,291,336,77,10
+    PUSHBUTTON      "保存参数",IDC_BUT_SAVE_PARAM_FILE,244,118,42,22
+END
+
+IDD_DLG_DATA_RECEIVE DIALOG DISCARDABLE  0, 0, 561, 251
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "单向数据接收服务"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "文件接收",IDC_STATIC,4,4,555,96
+    GROUPBOX        "数据接收",IDC_STATIC,4,112,555,59
+    GROUPBOX        "流媒体接收",IDC_STATIC,4,182,555,61
+    LTEXT           "存储路径:",IDC_STATIC,7,38,38,8
+    EDITTEXT        IDC_EDT_SAVE_PATH,44,37,204,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "当前状态:",IDC_STATIC,7,55,37,8
+    EDITTEXT        IDC_EDT_STATUS_CURRENT_FILE,44,54,244,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "启动",IDC_BUT_START_FILE,11,75,42,20
+    PUSHBUTTON      "停止",IDC_BUT_STOP_FILE,86,76,42,20
+    PUSHBUTTON      "重启",IDC_BUT_RESTART_FILE,165,76,42,20
+    PUSHBUTTON      "保存参数",IDC_BUT_SAVE_PARAN_FILE,246,75,42,21
+    PUSHBUTTON      "........",IDC_BUT_SAVE_PATH,258,37,30,14
+    LTEXT           "本地端口:",IDC_STATIC,9,17,37,8
+    EDITTEXT        IDC_EDT_PORT_LOCAL_FILE,46,14,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "安全检查已接收文件",IDC_CHECK_RECEIVEED_FILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,16,88,10
+    CONTROL         "List1",IDC_LST_FILE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,293,14,263,82
+    LTEXT           "本地端口:",IDC_STATIC,8,126,38,8
+    EDITTEXT        IDC_EDT_PORT_LOCAL_DATA,45,123,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "当前状态:",IDC_STATIC,91,125,38,8
+    EDITTEXT        IDC_EDT_STATUS_CURRENT_DATA,128,124,160,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "启动",IDC_BUT_START_DATA,10,146,42,20
+    PUSHBUTTON      "重启",IDC_BUT_RESTART_DATA,166,147,42,20
+    PUSHBUTTON      "保存参数",IDC_BUT_SAVE_PARAN_DATA,246,146,42,21
+    CONTROL         "List1",IDC_LST_DATA,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,294,120,263,48
+    LTEXT           "本地端口:",IDC_STATIC,7,197,37,8
+    EDITTEXT        IDC_EDT_PORT_LOCAL_MEDIA,44,194,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "当前状态:",IDC_STATIC,90,196,38,8
+    EDITTEXT        IDC_EDT_STATUS_CURRENT_MEDIA,127,195,160,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "启动",IDC_BUT_START_MEDIA,10,217,42,20
+    PUSHBUTTON      "停止",IDC_BUT_STOP_MEDIA,85,218,42,20
+    PUSHBUTTON      "重启",IDC_BUT_RESTART_MEDIA,167,218,42,20
+    PUSHBUTTON      "保存参数",IDC_BUT_SAVE_PARAN_MEDIA,245,217,42,21
+    CONTROL         "List1",IDC_LST_MEDIA,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,293,191,263,48
+    PUSHBUTTON      "停止",IDC_BUT_STOP_DATA_RECV,86,146,50,18
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "UnidirectDataTransfer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "UnidirectDataTransfer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "UnidirectDataTransfer.EXE\0"
+            VALUE "ProductName", "UnidirectDataTransfer 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLG_DATA_SEND, DIALOG
+    BEGIN
+        RIGHTMARGIN, 567
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_SEND_FILE MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "清空",                        ID_CLEAR_SEND_FILE
+    END
+END
+
+IDR_MENU_SEND_DATA MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "清空",                        ID_CLEAR_SEND_DATA
+    END
+END
+
+IDR_MENU_SEND_MEDIA MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "清空",                        ID_CLEAR_SEND_MEDIA
+    END
+END
+
+IDR_MENU_RECV_MEDIA MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "清空",                        ID_CLEAR_RECV_MEDIA
+    END
+END
+
+IDR_MENU_RECV_FILE MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "清空",                        ID_CLEAR_RECV_FILE
+    END
+END
+
+IDR_MENU_RECV_DATA MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "清空",                        ID_CLEAR_RECV_DATA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 UnidirectDataTransfer(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\UnidirectDataTransfer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

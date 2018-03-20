@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TransControl - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB7.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\Release/TransControl.pdb" /machine:I386 /def:".\TransControl.def" /out:"..\Release/TransControl.dll" /implib:"..\Release/TransControl.lib" 
+".\Release\Markup.obj"
+".\Release\RegistationSocket.obj"
+".\Release\StdAfx.obj"
+".\Release\TransControl.obj"
+".\Release\TransControlEx.obj"
+".\Release\TransSocket.obj"
+".\Release\TreatyPack.obj"
+".\Release\TransControl.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB7.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library ..\Release/TransControl.lib and object ..\Release/TransControl.exp
+
+
+
+<h3>Results</h3>
+TransControl.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

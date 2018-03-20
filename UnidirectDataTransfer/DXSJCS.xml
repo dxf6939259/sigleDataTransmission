@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="gb2312"?>
+<DXSJCS>
+<!-- a=单 向 数 据 发 送 服 务; b=单 向 数 据 接 收 服 务--> 
+<SoftType>b</SoftType> 
+<a>单 向 数 据 发 送 服 务</a>
+<b>单 向 数 据 接 收 服 务</b>
+<Sender>
+   <File>
+      <!-- 数据发送界面--文件传输模块--本地端口-->
+      <LocalPort>50001</LocalPort>
+      <!-- 数据发送界面--文件传输模块--目的IP-->
+      <AimIp>192.168.2.43</AimIp>
+      <!-- 数据发送界面--文件传输模块--目的端口-->
+      <AimPort>60005</AimPort>
+      <!-- 数据发送界面--文件传输模块--监视路径-->
+      <MonitorPath>E:\石家庄54所-勿删\TestData\Send</MonitorPath>
+      <!-- 数据发送界面--文件传输模块--监控类型-->
+      <MonitorType>*.h;*.cpp;*.docx;*.rar</MonitorType>
+      <!--数据发送界面--文件传输模块--是否删除已发送文件 1= Yes; 0 =No--> 
+      <IsDelFile>0</IsDelFile>
+      <!--数据发送界面--文件传输模块--是否转存已发送文件 1= Yes; 0 =No-->
+      <IsReSaveFile>1</IsReSaveFile>
+      <!--数据发送界面--文件传输模块--安全检查待发送文件 1= Yes; 0 =No-->
+      <IsSafeCheck>0</IsSafeCheck>
+      <!-- 数据发送界面--文件传输模块--转存路径-->
+      <SavePath>E:\石家庄54所-勿删\TestData\SaveAs</SavePath>
+   </File>
+   <Data>
+      <!-- 数据发送界面--数据传输模块--本地端口-->
+      <LocalPort>50002</LocalPort>
+      <!-- 数据发送界面--数据传输模块--目的地址-->
+      <AimIp>192.168.1.22</AimIp>
+      <!-- 数据发送界面--数据传输模块--目的端口-->
+      <AimPort>60006</AimPort>
+   </Data>
+   <Media>
+      <!-- 数据发送界面--流媒体传输模块--本地端口-->
+      <LocalPort>50003</LocalPort>
+      <!-- 数据发送界面--流媒体传输模块--本地端口-->
+      <AimIp>192.168.1.22</AimIp>
+      <!-- 数据发送界面--流媒体传输模块--目的端口-->
+      <AimPort>60007</AimPort>
+   </Media>
+   <End>
+      <!-- 数据发送界面--终端设备信息--本地端口-->
+      <LocalPort>50004</LocalPort>
+      <!-- 数据发送界面--终端设备信息--目的地址-->
+      <AimIp>192.168.1.22</AimIp>
+      <!-- 数据发送界面--终端设备信息--目的端口-->
+      <AimPort>60021</AimPort>
+      <!--数据发送界面--终端设备信息--启动双向校验回路 1= Yes; 0 =No-->
+      <IsVerifReturn>1</IsVerifReturn>
+   </End>
+</Sender>
+<Recevier>
+   <File>
+      <!-- 数据接收界面--文件接收--本地端口-->
+      <LocalPort>60005</LocalPort>
+      <!--数据接收界面--文件接收--安全检查已接收文件 1= Yes; 0 =No-->
+      <IsSafeCheck>1</IsSafeCheck>
+      <!-- 数据接收界面--文件接收--存储路径-->
+      <SavePath>E:\石家庄54所-勿删\TestData\Receive111</SavePath>
+   </File>
+   <Data>
+      <!-- 数据接收界面--数据接收--本地端口-->
+      <LocalPort>60006</LocalPort>
+   </Data>
+   <Media>
+      <!-- 数据接收界面--流媒体接收--本地端口-->
+      <LocalPort>60007</LocalPort>
+   </Media>
+</Recevier>
+</DXSJCS>
